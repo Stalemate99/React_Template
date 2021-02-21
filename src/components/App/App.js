@@ -1,5 +1,6 @@
 import { Suspense } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from "../Home/Home"
 import './App.css';
 
 const Loading = () => {
@@ -12,7 +13,7 @@ export default function App() {
       <Router>
         <Switch>
           <Route exact path="/">
-            Insert Your component
+            <Home />
           </Route>
           <Route path="/Home">
             Insert second component 
